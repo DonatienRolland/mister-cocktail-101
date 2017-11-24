@@ -12,7 +12,8 @@
         <%= f.association :ingredient, prompt: "Select an ingredient" %>
         <%= f.submit "Add an ingredient", class: "btn btn-primary" %>
       <% end %>
-      <%= link_to 'Back', cocktails_path %>
+      <%= link_to '<i class="fa fa-trash-o" aria-hidden="true"></i>'.html_safe, cocktail_path(@cocktail), method: :delete, data: {confirm: "Are you sure?"} %>
+      <%= link_to 'Back', root_path %>
     </div>
   </div>
 </div>

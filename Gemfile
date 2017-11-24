@@ -7,6 +7,7 @@ gem 'pg'
 gem 'figaro'
 # gem 'jbuilder', '~> 2.0'
 gem 'redis'
+gem 'webpacker'
 
 gem 'sass-rails'
 gem 'jquery-rails'
@@ -28,3 +29,5 @@ group :development, :test do
 end
 
 gem 'figaro'
+gem 'cloudinary'
+gem 'carrierwave', '~> 0.11.2'

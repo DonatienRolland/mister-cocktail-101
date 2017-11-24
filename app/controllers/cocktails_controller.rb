@@ -24,11 +24,16 @@ class CocktailsController < ApplicationController
       render :new
     end
   end
+  def destroy
+    @cocktail = Cocktail.find(params[:id])
+    @cocktail.destroy
+    redirect_to root_path
+  end
 
   private
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def cocktail_params
-    params.require(:cocktail).permit(:name)
+    params.require(:cocktail).permit(:name, :photo)
   end
 end
