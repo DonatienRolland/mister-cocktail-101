@@ -5,7 +5,7 @@ gem 'rails', '5.1.4'
 gem 'puma'
 gem 'pg'
 gem 'figaro'
-gem 'jbuilder', '~> 2.0'
+# gem 'jbuilder', '~> 2.0'
 gem 'redis'
 
 gem 'sass-rails'
@@ -16,6 +16,10 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-plugin'
+end
+
 group :development, :test do
   gem 'web-console'
   gem 'spring'
@@ -23,4 +27,4 @@ group :development, :test do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-
+gem 'figaro'
